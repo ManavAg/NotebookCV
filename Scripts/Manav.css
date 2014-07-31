@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+{
+	width:1360px;
+	height:600px;
+	background-color: #cccccc;
+	background-size:1360px 600px;
+	overflow:scroll;
+	background-repeat:no-repeat;
+}
+.bookmarks{
+	display:inline-block;
+	width:95px;
+	height:100px;
+	margin-left:5px;
+}
+#Bookmark1{
+	margin-left:555px;
+}
+.heading
+{
+    font-size: 20px;
+	font-weight:bold;
+	font-family:sans-serif;
+    color: #FF0;
+	margin-top:20px;
+	margin-left:300px;
+    text-align: center;
+}
+.tagline
+{
+    font-size: 16px;
+    color: #000;
+	margin-top:25px;
+	margin-left:555px;
+    text-align:justify;
+}
+.text
+{
+	font-family:"Times New Roman";
+    font-size:20px;
+	font-weight:bold;
+    text-align:left;
+    color: #000;
+	margin-top:20px;
+	margin-left:605px;
+	margin-right:80px;
+    text-align:justify;
+}
+.panel
+{
+	color:#000;
+	background-color:transparent;
+	margin-bottom:0px;
+	border:none;
+}
+.panel:hover
+{
+	color:#000;
+	background-color:#09C;
+}
+.normaltext
+{
+	display:inline;
+	font-size:16px;
+	font-weight:normal;
+}
+.ClassHeader
+{
+	color:#000;
+}
+.table
+{
+	text-align:center;
+}
+th
+{
+	text-align:center;
+	width:25%;
+	font-style:italic;
+}
+.table>tbody>tr>td
+{
+	padding:0px;
+}
+h3
+{
+	color:#FFF;
+	height:10px;
+}
+.nav
+{
+	font-size:16px;
+}
+span.stars, span.stars span {
+    display: block;
+    background: url(../Pics/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
+.classysocial {
+	position:fixed;
+	display:inline-block;
+	margin-left:15%;
+	margin-top:35%; 
+	padding-bottom:0%;
+}

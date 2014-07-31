@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Scripts/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="Scripts/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="Scripts/classysocial/css/jquery.classysocial.min.css">
+<script src="Scripts/jquery-1.11.0.min.js"></script>
+<script src="Scripts/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="Scripts/classysocial/js/jquery.classysocial.min.js"></script>
+<script src="Scripts/perfect-scrollbar-0.4.8/min/perfect-scrollbar-0.4.8.min.js"></script>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<script>
+
+	$(document).ready(function() {
+    	$('.classysocial').ClassySocial();
+		$('.spydata').scrollspy({ target: '.navbar-example' })
+	});
+   function Content(a)
+   {
+	   if (a=="summary")
+	   {
+		   document.getElementById("Heading").innerHTML = "Summary";
+		   document.getElementById("Content").innerHTML = '<div class="tagline">Implement my skills, motivation and passion for cutting-edge technology in a dynamic and innovative environment</div><br><div class="semiheading">Professional Profile :</div>      <div class="points">                     	Project Management Consultant at Airbus France<br>                     	Software Developer at Medusind Solutions India<br>                     	Firm skills in Project Analysis and Strategic Planning<br>                    	Problem Solving, Technical and Innovative Approach<br>                    	Project Management Consultant at Airbus France<br> </div>";'
+	   }
+	   if (a=="education")
+	   {
+		   document.getElementById("Heading").innerHTML = "Education";
+		    document.getElementById("Content").innerHTML = '<div class="tagline">Double Masters in Aerospace Project Management and Aerospace Engineering</div><br><div class="semiheading">Education Profile :</div>      <div class="points">                     	Professional Master Degree in Aerospace Project Management from ISAE (Supaero), ENAC and Ecole de l\'air (France)<br>                     	Research Masters Degree in Aerospace Engineering from IIT Bombay (India)<br></div>";'
+	   }
+	   if (a=="experience")
+	   {
+		   document.getElementById("Heading").innerHTML = "Experience";
+		    document.getElementById("Content").innerHTML = '<div class="tagline">Experience as a Project Management consultant and a software developer</div><br><div class="semiheading">Work Profile :</div>      <div class="points">                     	Project Management Consultant at Airbus France<br>                     	Software Developer at Medusind Solutions India<br>                     	Firm skills in Project Analysis and Strategic Planning<br></div>";'
+	   }
+	   if (a=="languages")
+	   {
+		   document.getElementById("Heading").innerHTML = "Languages";
+		    document.getElementById("Content").innerHTML = '<div class="tagline">Multi-lingual experience</div><br><div class="semiheading">Language Profile :</div>      <div class="points">                     	Bilingual in English and Hindi<br>                     	Conversational Level in French<br>                     	Basic level in German<br></div>";'
+	   }
+	   if (a=="projects")
+	   {
+		   document.getElementById("Heading").innerHTML = "Projects";
+		    document.getElementById("Content").innerHTML = '<div class="tagline"></div><br><div class="semiheading">Project Profile :</div>      <div class="points">                     	Project Management Consultant at Airbus France<br>                     	Software Developer at Medusind Solutions India<br>                     	Firm skills in Project Analysis and Strategic Planning<br></div>";'
+	   }
+	   if (a=="itskills")
+	   {
+		   document.getElementById("Heading").innerHTML = "IT Skills";
+		    document.getElementById("Content").innerHTML = '<div class="tagline">Diverse experience in major programming languages, OS, Softwares and Utilities</div><br><div class="semiheading">IT Profile :</div>      <div class="points">                     Programming:     Java, C/C++, Visual Basic, FORTRAN 90, OpenCV, MATLAB <br>Web Design:    HTML, XML, JavaScript, PHP, VBScript <br>PM Tools:    MS Project 2010, MS SharePoint 2013, Primevera <br>IT Tools:     MS Office Pack, Open Office, VBA Macros, SQL <br>CAD:      Catia V5, Solidworks, ProEngineer, LabView, Simulink <br></div>";'
+	   }
+	   if (a=="hobbies")
+	   {
+		   document.getElementById("Heading").innerHTML = "Extra curricular Activities";
+		    document.getElementById("Content").innerHTML = '<div class="tagline"></div><br><div class="semiheading">Extra- Curricular Profile :</div>      <div class="points">         Secured 1st place in National Business Case Study Analysis Competition by Diamond Consultancy(PwC Group) <br>Played the lead role in a German Theatre play “Die Nibelungen” in Toronto <br>Cleared NCC (National Cadet Corps ’Student Army’) Certificate exam securing the post of Corporal";'
+	   }
+   }
+   
+</script>
+<style>
+body 
+{
+	background-image: url('Pics/Background_TorontoRestaurant.jpg');
+	background-color: #cccccc;
+	background-size: 100%;
+	background-position-y: -200px;
+	background-position-x: -0px;
+	background-attachment: fixed; 
+	overflow:hidden; 
+}
+h3
+{
+	color:#FFF;
+	height:10px;
+}
+.MenuItems
+{
+	margin-top: 5%;
+	font-family:"Times New Roman";
+    font-size: 40px;
+	font-weight:bold;
+    text-align: center;
+}
+.btn-lg
+{
+	margin-left:30%;
+}
+.SummaryPositionAdjustment
+{
+    height: 15%;
+    width: 106%;
+    font-family:"Times New Roman";
+	overflow:scroll; 
+	height:350px;
+}
+.heading
+{
+    font-size: 30px;
+	font-weight:bold;
+    color: #FFF;
+    text-align: center;
+	display:none;
+}
+.semiheading
+{
+    font-size: 20px;
+	font-weight:bold;
+    color: #FFF;
+    text-align: center;
+}
+.points
+{
+    font-size: 17px;
+    color: #FFF;
+    text-align:left;
+	margin-left:15%;
+}
+.tagline
+{
+    font-size: 17px;
+    color: #FFF;
+    text-align:justify;
+}
+</style>
+<title>MANAV AGARWAL CV</title>
+</head>
+
+<body background="Pics/Background_TorontoRestaurant.jpg">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="row">  <div class="col-md-7 col-md-offset-4"><div class="MenuItems">
+<img src="Pics/Logo_Home.png" width="10%" style="margin-bottom:13%;"> 
+
+
+
+<div style="display:inline-block;margin-left:20%;" class="classysocial" 
+    data-arc-length="360" 
+    data-picture="pics/contact.png"
+    data-image-type="picture" 
+    data-facebook-handle="Manava1" 
+    data-youtube-handle="Manava1" 
+    data-twitter-handle="Manava" 
+    data-linkedin-handle="Manava" 
+    data-email-handle="Manav.agarwal4@Gmail.com"
+    data-networks="facebook,youtube,twitter,email,linkedin"></div>
+  
+  </div></div></div>
+<div class="fb-like col-md-offset-1" data-href="http://aap.manavagarwal.net/" data-width="500" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class="row spydata" style="width:100%;" data-spy="scroll" data-target=".navbar-example">
+	<div class="col-md-7 col-md-offset-5">
+    	<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-primary btn-lg" onClick="Content('summary');">
+    		<input type="radio" name="options" id="option1"> Summary
+  			</label>
+  			<label class="btn btn-primary btn-lg" onClick="Content('education');">
+    		<input type="radio" name="options" id="option2"> Education
+  			</label>
+  			<label class="btn btn-primary btn-lg" onClick="Content('experience');">
+    		<input type="radio" name="options" id="option3"> Experience
+  			</label>
+			<label class="btn btn-primary btn-lg" onClick="Content('languages');">
+    		<input type="radio" name="options" id="option3"> Languages
+  			</label>
+            <label class="btn btn-primary btn-lg" onClick="Content('itskills');">
+    		<input type="radio" name="options" id="option3"> IT Skills
+  			</label>
+			<label class="btn btn-primary btn-lg" onClick="Content('projects');">
+    		<input type="radio" name="options" id="option3"> Projects
+  			</label>
+            <label class="btn btn-primary btn-lg" onClick="Content('hobbies');">
+    		<input type="radio" name="options" id="option3"> Hobbies
+  			</label>
+		</div>
+    	<div class="SummaryPositionAdjustment" style='overflow-y:scroll;overflow-x:hidden;'>
+        	
+        	<div class="heading" id="Heading">Career Goal</div>
+			<div id="Content">
+                <div class="tagline">Implement my skills, motivation and passion for cutting-edge technology in a dynamic and innovative environment</div><br>
+                <div class="semiheading">Professional Profile :</div>
+                <div class="points"> 
+                    	Project Management Consultant at Airbus France<br> 
+                    	Software Developer at Medusind Solutions India<br> 
+                    	Firm skills in Project Analysis and Strategic Planning<br>
+                    	Problem Solving, Technical and Innovative Approach<br>
+                    	Project Management Consultant at Airbus France<br> 
+                    	Software Developer at Medusind Solutions India<br> 
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
